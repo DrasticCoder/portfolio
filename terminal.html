@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,21 @@
     <!-- Google FOnts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Custom THEME CSS -->
     <link rel="stylesheet" id="theme-style" href="" type="text/css">
 </head>
+
 <body style="overflow:hidden;">
 
-    <section class="s1" style="height: 100vh;">
+    <div class="s1" style="height: 100vh;">
         <div class="main-container">
-           
+
             <div class="box-wrapper" style="margin: 10em 0;">
                 <div class="nav-wrapper">
                     <div class="dots-wrapper">
@@ -33,17 +36,24 @@
                         <li><a href="index.html">Home</a></li>
                     </ul>
                 </div>
-                
-                <div class="terminal-wrapper">
-                    <p>Last login: <span id="show_date"></span></p>
-                    <span>Deep-Bansode:~ drasticcoder$ </span> <input type="text" name="command" id="command" placeholder="enter ' --help' for command list" onblur="this.focus()" autofocus>
+
+                <!-- <div id="terminal" class="terminal-wrapper"> -->
+                <div id="terminal">
+                    <!-- <p>Last login: <span id="show_date"></span></p>
+                    <span>#Deep-Bansode ~/drasticcoder$ </span> -->
+                    
                 </div>
-            
+
+                    <!-- <input type="text" name="command" id="command"
+                        placeholder="enter 'deep --help' for help" onblur="this.focus()" autofocus> -->
+                
+
+            </div>
         </div>
-    </section>
 
 
-<script src="logic.js"></script>
-<script src="terminal.js"></script>
+    <script src="logic.js"></script>
+    <script src="terminal.js"></script>
 </body>
+
 </html>
