@@ -5,12 +5,6 @@ let d = new Date();
 const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"]
 
-// showDate.innerHTML = `on ${d.getHours()}:${d.getMinutes()}_${days[d.getDay()]} ${months[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`
-
-
-
-// #########################
-
 const app = document.querySelector("#terminal");
 const delay = ms => new Promise(res => setTimeout(res, ms));
     
@@ -60,6 +54,7 @@ function new_line(){
   p.setAttribute("class", "path")
   p.textContent = "# DrasticCoder";
   span1.textContent = " in";
+  span2.setAttribute('class',"guest");
   span2.textContent = " ~/guest";
   p.appendChild(span1);
   p.appendChild(span2);
@@ -111,7 +106,6 @@ async function getInputValue(){
   }
   else if(value === "cd contact"){
     trueValue(value);
-    // createText("Click to call  <a href='callto:' target='_blank'>9864450116</a>")
     createText("For more details visit this link <a href='/contact' target='_blank'>localhost:5173/contact</a>") }
   else if(value === "cd skills"){
     trueValue(value);
@@ -135,7 +129,7 @@ function trueValue(value){
   div.setAttribute("class", "type2")
   const i = document.createElement("i");
   i.setAttribute("class", "fas fa-angle-right icone")
-  const mensagem = document.createElement("h2");
+  const mensagem = document.createElement("h6");
   mensagem.setAttribute("class", "sucess")
   mensagem.textContent = `${value}`;
   div.appendChild(i);
@@ -149,7 +143,7 @@ function falseValue(value){
   div.setAttribute("class", "type2")
   const i = document.createElement("i");
   i.setAttribute("class", "fas fa-angle-right icone error")
-  const mensagem = document.createElement("h2");
+  const mensagem = document.createElement("p");
   mensagem.setAttribute("class", "error")
   mensagem.textContent = `${value}`;
   div.appendChild(i);

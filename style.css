@@ -441,9 +441,6 @@ h6 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgb(129, 129, 129);
 }
-/* ::-webkit-scrollbar{
-    display: none;
-} */
 
 #terminal input{
     background-color: unset;
@@ -470,7 +467,19 @@ h6 {
     width: 50vw;
 }
 
-/* #command:focus {
-    outline: none;
-    border: none;
-} */
+.path{
+    color: yellow;
+}
+
+.error{
+    /* color:hotpink */
+    color:#fc6058;
+}
+
+.guest{
+    color: #2aca3e;
+}
+
+.code{
+    color: skyblue;
+}
