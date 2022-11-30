@@ -48,7 +48,7 @@ async function open_terminal(){
 
 function new_line(){
   
-  const p = document.createElement("p");
+  const p = document.createElement("h6");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
   p.setAttribute("class", "path")
